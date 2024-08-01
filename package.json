@@ -2,7 +2,7 @@
   "name": "syninpy",
   "displayName": "syninpy",
   "description": "syntax highlighting for snippets within python files",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "JohnoWhitaker",
   "engines": {
     "vscode": "^1.60.0"

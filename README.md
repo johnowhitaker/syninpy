@@ -38,3 +38,5 @@ def another_python_function():
 ```
 
 You can also end with #end-js. Note it skips the line immediately after the #js tag.
+
+`# js` and `# end-js` now also work, for those with linters.

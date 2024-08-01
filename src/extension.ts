@@ -71,12 +71,12 @@ class PythonJSSemanticTokensProvider implements vscode.DocumentSemanticTokensPro
             const prevline = document.lineAt(i - 1);
             const nextline = document.lineAt(i + 1);
             
-            if (prevline.text.trim().startsWith('#js')) { // skip first line after comment, usually """
+            if ((prevline.text.trim().startsWith('#js')) || (prevline.text.trim().startsWith('# js'))) { // skip first line after comment, usually """
                 inJsBlock = true;
                 continue;
             }
 
-            if ((nextline.text.trim().startsWith('#end-js')) || (line.text.trim().startsWith('"""'))) {
+            if ((nextline.text.trim().startsWith('#end-js')) || (nextline.text.trim().startsWith('# end-js')) || (line.text.trim().startsWith('"""'))) {
                 inJsBlock = false;
                 continue;
             }
