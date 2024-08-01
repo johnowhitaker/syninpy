@@ -2,6 +2,10 @@
 
 Hackily adding syntax highlighting to JS snippets in python
 
+Extension page: https://marketplace.visualstudio.com/items?itemName=JohnoWhitaker.syninpy
+
+Warning: experimental, not tested much, use at your own risk :)
+
 ## Usage
 
 Include your snippets in the code like this to get syntax highlighting:
@@ -27,9 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 """
-#end-js
 
 def another_python_function():
     print("Hello World")
 
 ```
+
+You can also end with #end-js. Note it skips the line immediately after the #js tag.

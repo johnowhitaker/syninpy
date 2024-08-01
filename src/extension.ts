@@ -76,7 +76,7 @@ class PythonJSSemanticTokensProvider implements vscode.DocumentSemanticTokensPro
                 continue;
             }
 
-            if (nextline.text.trim().startsWith('#end-js')) {
+            if ((nextline.text.trim().startsWith('#end-js')) || (line.text.trim().startsWith('"""'))) {
                 inJsBlock = false;
                 continue;
             }
