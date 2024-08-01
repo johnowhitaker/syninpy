@@ -3,8 +3,13 @@
   "displayName": "syninpy",
   "description": "syntax highlighting for snippets within python files",
   "version": "0.0.1",
+  "publisher": "Johno Whitaker",
   "engines": {
     "vscode": "^1.60.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnowhitaker/syninpy.git"
   },
   "categories": [
     "Programming Languages"
