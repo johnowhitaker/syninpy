@@ -3,7 +3,7 @@
   "displayName": "syninpy",
   "description": "syntax highlighting for snippets within python files",
   "version": "0.0.1",
-  "publisher": "Johno Whitaker",
+  "publisher": "JohnoWhitaker",
   "engines": {
     "vscode": "^1.60.0"
   },
